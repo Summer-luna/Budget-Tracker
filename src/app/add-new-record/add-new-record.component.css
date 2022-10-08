@@ -1,1 +1,57 @@
+.icon {
+  background-color: rgb(229, 227, 227);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
 
+.icon:hover,
+.clicked {
+  background-color: rgb(59, 73, 85);
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.adding {
+  width: 80vw;
+  padding: 100px 200px;
+}
+
+.fi-rr-edit {
+  font-size: 20px;
+}
+.fi-rr-piggy-bank {
+  font-size: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+}
+
+.userInput {
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.btn-dark {
+  background-color: rgb(59, 73, 85);
+}
+
+input::-webkit-calendar-picker-indicator {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.userInput:has(input.ng-invalid.ng-touched) {
+  border: 1px solid #dd5353;
+}

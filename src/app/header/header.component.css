@@ -20,6 +20,14 @@ nav {
   color: rgb(189, 200, 210);
 }
 
+.nav-link i {
+  pointer-events: none;
+}
+
+.nav-link p {
+  pointer-events: none;
+}
+
 .active {
   color: white;
 }

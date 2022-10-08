@@ -1,25 +1,25 @@
 <nav class="pt-5 pe-4 ps-2 bg-grey text-white" [ngClass]="{'active-navbar-btn': navBarClosed }">
-  <div class="d-flex gap-2 justify-content-end" (click) = "toggleNavbar()">
-    <i class="fi fi-br-angle-double-left cursor-pointer" *ngIf="navBarClosed; else navBarOpened"></i>
+  <div class="d-flex gap-2 justify-content-end">
+    <i class="fi fi-br-angle-double-left cursor-pointer" *ngIf="navBarClosed; else navBarOpened" (click) = "toggleNavbar()"></i>
     <ng-template #navBarOpened>
-      <i class="fi fi-br-angle-double-right cursor-pointer"></i>
+      <i class="fi fi-br-angle-double-right cursor-pointer" (click) = "toggleNavbar()"></i>
     </ng-template>
   </div>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <a class="nav-link active d-flex gap-2" aria-current="page" href="#">
+      <a class="nav-link active d-flex gap-2" aria-current="page" href="#" (click)="clickNavBarItem($event)">
         <i class="fi fi-sr-file-invoice-dollar"></i>
         <p>Detail</p>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link d-flex gap-2 text-light-blue" href="#">
+      <a class="nav-link d-flex gap-2" href="#" (click)="clickNavBarItem($event)">
         <i class="fi fi-br-chart-line-up"></i>
-        <p>Chart</p>
+        <p >Chart</p>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link d-flex gap-2 text-light-blue" href="#">
+      <a class="nav-link d-flex gap-2" href="#" (click)="clickNavBarItem($event)">
         <i class="fi fi-sr-map"></i>
         <p>Map</p>
       </a>
