@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import icons from '../../data/icons.json';
+import icons from '../model/icons.json';
 import { NgForm } from '@angular/forms';
-import { RecordsService } from '../records.service';
+import { RecordsService } from '../model/records.service';
+import { v4 as uuidv4 } from 'uuid';
 
 @Component({
   selector: 'app-add-new-record',
@@ -36,16 +37,19 @@ export class AddNewRecordComponent implements OnInit {
   // click add button handler
   clickAddBtn(f: NgForm) {
     let newRecord;
+    const myId = uuidv4();
 
     if (!f.value.note) {
       newRecord = {
         ...f.value,
+        id: myId,
         icon: this.selectedIcon.address,
         note: this.selectedIcon.name,
       };
     } else {
       newRecord = {
         ...f.value,
+        id: myId,
         icon: this.selectedIcon.address,
       };
     }

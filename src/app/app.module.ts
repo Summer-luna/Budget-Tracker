@@ -7,9 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { AddNewRecordComponent } from './add-new-record/add-new-record.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { RecordsService } from './records.service';
-import { DateFormatorPipe } from './date-formator.pipe';
-import { CalculatorPipe } from './calculator.pipe';
+import { RecordsService } from './model/records.service';
+import { DateFormatorPipe } from './pipes/date-formator.pipe';
+import { CalculatorPipe } from './pipes/calculator.pipe';
 
 @NgModule({
   declarations: [
