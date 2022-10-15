@@ -1,35 +1,24 @@
 {
   "2022": {
-    "1": {},
-    "2": {},
-    "3": {},
-    "4": {},
-    "5": {},
-    "6": {},
-    "7": {},
-    "8": {},
-    "9": {},
     "10": {
-      "Oct 12 2022": [
+      "11": [
         {
-          "amount": 20,
+          "note": "travel",
+          "amount": -2000,
+          "date": "2022-10-11",
+          "id": "5bdf076d-2d79-4ab8-ba0a-b73438af7229",
+          "icon": "fi fi-rr-plane-alt"
+        }
+      ],
+      "12": [
+        {
+          "amount": -20,
           "date": "2022-10-12",
           "icon": "fi fi-rr-phone-call",
           "id": "6d7b57d6-8bf2-4f62-a721-8ed2417c3e42",
           "note": "telephone"
         }
-      ],
-      "Oct 11 2022": [
-        {
-          "note": "travel",
-          "amount": 2000,
-          "date": "2022-10-11",
-          "id": "5bdf076d-2d79-4ab8-ba0a-b73438af7229",
-          "icon": "fi fi-rr-plane-alt"
-        }
       ]
-    },
-    "11": {},
-    "12": {}
+    }
   }
 }

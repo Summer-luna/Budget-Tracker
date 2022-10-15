@@ -1,3 +1,26 @@
+.cancel-btn {
+  position: relative;
+  top: 0;
+  right: -20vw;
+}
+
+.active {
+  background-color: #3b4955;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#expense,
+#income {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:active {
+  color: #3b4955;
+}
+
 .icon {
   background-color: rgb(229, 227, 227);
   padding: 10px;
@@ -17,6 +40,10 @@
 .adding {
   width: 80vw;
   padding: 100px 200px;
+}
+
+form {
+  width: 100%;
 }
 
 .fi-rr-edit {
@@ -54,4 +81,10 @@ input::-webkit-calendar-picker-indicator {
 
 .userInput:has(input.ng-invalid.ng-touched) {
   border: 1px solid #dd5353;
+}
+
+@media (min-width: 2000px) {
+  form {
+    width: 60%;
+  }
 }

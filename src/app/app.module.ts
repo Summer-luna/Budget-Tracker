@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { RecordsService } from './model/records.service';
 import { DateFormatorPipe } from './pipes/date-formator.pipe';
 import { CalculatorPipe } from './pipes/calculator.pipe';
+import { BudgetDeleteRecordComponent } from './budget-delete-record/budget-delete-record.component';
+import { NumberFormatPipe } from './pipes/number-format.pipe';
+import { BudgetChartComponent } from './budget-chart/budget-chart.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { CalculatorPipe } from './pipes/calculator.pipe';
     HomeComponent,
     DateFormatorPipe,
     CalculatorPipe,
+    BudgetDeleteRecordComponent,
+    NumberFormatPipe,
+    BudgetChartComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [RecordsService],

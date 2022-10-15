@@ -19,14 +19,4 @@ export class HeaderComponent implements OnInit {
   toggleNavbar() {
     this.navBarClosed = !this.navBarClosed;
   }
-
-  clickNavBarItem(event: any) {
-    const items = document.querySelectorAll('.active');
-
-    items.forEach((item) => {
-      item.classList.remove('active');
-    });
-
-    event.target.classList.add('active');
-  }
 }

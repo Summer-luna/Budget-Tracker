@@ -1,6 +1,6 @@
 import { Icon } from './Icon';
 
-export const ICONS: Icon[] = [
+export const EXPENSE_ICONS: Icon[] = [
   {
     name: 'book',
     className: 'fi fi-rr-book-bookmark',
@@ -64,6 +64,33 @@ export const ICONS: Icon[] = [
   {
     name: 'health',
     className: 'fi fi-rr-doctor',
+  },
+];
+
+export const INCOME_ICONS: Icon[] = [
+  {
+    name: 'rebate',
+    className: 'fi fi-rr-credit-card',
+  },
+  {
+    name: 'salary',
+    className: 'fi fi-rr-sack-dollar',
+  },
+  {
+    name: 'wages',
+    className: 'fi fi-rr-usd-circle',
+  },
+  {
+    name: 'investment',
+    className: 'fi fi-rr-bank',
+  },
+  {
+    name: 'transfer',
+    className: 'fi fi-rr-credit-card',
+  },
+  {
+    name: 'others',
+    className: 'fi fi-rr-coins',
   },
 ];
 
