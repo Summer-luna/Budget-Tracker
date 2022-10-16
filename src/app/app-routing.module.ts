@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AddNewRecordComponent } from './add-new-record/add-new-record.component';
 import { BudgetDeleteRecordComponent } from './budget-delete-record/budget-delete-record.component';
 import { BudgetChartComponent } from './budget-chart/budget-chart.component';
+import { BudgetMapComponent } from './budget-map/budget-map.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'add', component: AddNewRecordComponent },
   { path: 'edit/:id', component: AddNewRecordComponent },
   { path: 'chart', component: BudgetChartComponent },
+  { path: 'map', component: BudgetMapComponent },
 ];
 
 @NgModule({

@@ -13,6 +13,10 @@ import { CalculatorPipe } from './pipes/calculator.pipe';
 import { BudgetDeleteRecordComponent } from './budget-delete-record/budget-delete-record.component';
 import { NumberFormatPipe } from './pipes/number-format.pipe';
 import { BudgetChartComponent } from './budget-chart/budget-chart.component';
+import { BudgetMapComponent } from './budget-map/budget-map.component';
+import { MapService } from './model/map.service';
+import { HttpClientModule } from '@angular/common/http';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -25,9 +29,16 @@ import { BudgetChartComponent } from './budget-chart/budget-chart.component';
     BudgetDeleteRecordComponent,
     NumberFormatPipe,
     BudgetChartComponent,
+    BudgetMapComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [RecordsService],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    GoogleMapsModule,
+  ],
+  providers: [RecordsService, MapService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
