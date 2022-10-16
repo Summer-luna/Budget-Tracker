@@ -12,6 +12,7 @@
 
 nav {
   height: 100vh;
+  position: fixed;
   transition: transform 0.5s ease;
   width: 250px;
 }

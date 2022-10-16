@@ -14,7 +14,6 @@ import { BudgetDeleteRecordComponent } from './budget-delete-record/budget-delet
 import { NumberFormatPipe } from './pipes/number-format.pipe';
 import { BudgetChartComponent } from './budget-chart/budget-chart.component';
 import { BudgetMapComponent } from './budget-map/budget-map.component';
-import { MapService } from './model/map.service';
 import { HttpClientModule } from '@angular/common/http';
 import { GoogleMapsModule } from '@angular/google-maps';
 
@@ -38,7 +37,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     HttpClientModule,
     GoogleMapsModule,
   ],
-  providers: [RecordsService, MapService],
+  providers: [RecordsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
